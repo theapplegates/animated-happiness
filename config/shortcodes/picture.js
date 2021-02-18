@@ -4,7 +4,7 @@ const Image = require("@11ty/eleventy-img");
  * The eleventy-img plugin takes a while to work, 
  * so let's skip all that image processing in development.
  */
-const developmentFormats = ["jpeg"];
+const developmentFormats = ["avif", "jpeg"];
 const productionFormats = ["avif", "webp", "jpeg"];
 
 const picture = (eleventyConfig) => {
