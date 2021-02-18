@@ -15,7 +15,7 @@ const picture = (eleventyConfig) => {
         throw new Error(`Missing \`alt\` on responsiveimage from: ${src}`);
 
       const metadata = await Image(src, {
-        widths: [300, 600, 1200, 1800],
+        widths: [150, 300, 600, 1200, 1800],
         formats:
           process.env.ELEVENTY_ENV === "production"
             ? productionFormats
